@@ -1,0 +1,29 @@
+{
+    "author": "",
+    "name": "myapp",
+    "description": "test",
+    "version": "0.0.1",
+    "engines": {
+        "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
+    },
+    "scripts": {
+        "start": "brunch watch --server"
+    },
+    "dependencies": {
+        
+        "javascript-brunch": "1.7.1",
+        "coffee-script-brunch": "1.8.0",
+        "css-brunch": "1.7.0",
+        "stylus-brunch": "1.8.0",
+
+        "uglify-js-brunch": "1.7.7",
+        "clean-css-brunch": "1.7.1",
+
+        "emblem": "0.3.18",
+
+        "ember-handlebars-brunch": "1.2.0",
+        "emblem-brunch": "git+https://github.com/caikaijie/emblem-brunch.git",
+
+        "pushserve": "*"
+    }
+}
