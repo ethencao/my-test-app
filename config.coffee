@@ -64,20 +64,5 @@ config =
   notifications: on
   optimize: off
 
-do ->
-  normalizeJoinTo = (joinTo)->
-    reg = /^#{MODULE_NAME}\//
-    for k, v of joinTo
-      if reg.test k
-        console.log 'k=', k
-        k_ = k.replace(reg, "#{MODULE_NAME}/")
-        console.log 'k_=', k_
-        joinTo[k_] = v
-        delete joinTo[k]
-
-  normalizeJoinTo config.files.javascripts.joinTo
-  normalizeJoinTo config.files.stylesheets.joinTo
-  normalizeJoinTo config.files.templates.joinTo
-
 exports.config = config
 
